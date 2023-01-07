@@ -4,9 +4,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PluralSight Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Pluralsight Clone</title>
 </head>
 <body>
-  
+  <div id="wrapper">
+    <div id="left">
+      <div id="signin">
+        <div id="logo">
+          <img src="img/logo.png" alt="Pluralsight Logo">
+        </div>
+        <form>
+          <div>
+            <label>Email or Username</label>
+            <input type="text">
+          </div>
+          <div>
+            <label>Password</label>
+          <input type="password">
+          </div>
+          <button class="signin-btn" type="submit">Sign in</button>
+        </form>
+        <div id="links">
+          <a href="#">Forgot password?</a>
+          <a href="#">Sign in with company or school</a>
+        </div>
+        <hr>
+        <div id="account">
+          <button class="create-btn" type="submit">Create an account</button>
+        </div>
+      </div>
+      <footer id="footer">
+        <p>Copyright &copy; 2004-2023 Pluralsight LLC. All rights reserved.</p>
+        <a href="#">Terms of Use</a> | <a href="#">Privary Policy</a>
+      </footer>
+    </div>
+    <div id="right">
+      <div id="showcase">
+        <img src="img/login-skills.png" alt="Skills login showcase">
+      </div>
+      <button id="try-btn" type="submit">Try for free</button>
+    </div>
+  </div>
 </body>
 </html>
