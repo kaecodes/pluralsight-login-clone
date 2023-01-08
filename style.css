@@ -8,7 +8,10 @@
 
 :root {
   --blue: #0074AA;  
+  --blue-hover: #016295; 
+  --links-hover: #0D5075; 
   --dark-gray: #2C3137; 
+  --dark-gray-hover: #333840; 
   --magenta: #FF1675; 
   --white: #F3F3F3; 
   --black: #0D0F13; 
@@ -35,7 +38,7 @@ body {
 }
 
 #signin {
-  width: 80%;
+  width: 65%;
 }
 
 #logo {
@@ -73,10 +76,15 @@ input {
   outline: none; 
   margin-top: 1rem; 
   border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.signin-btn:hover {
+  background-color: var(--blue-hover); 
 }
 
 #links {
-  margin-top: 3rem; 
+  margin-top: 2.5rem; 
   margin-bottom: 2rem;
 }
 
@@ -86,6 +94,13 @@ input {
   margin-top: 2rem;
   text-decoration: none;
   color: var(--blue); 
+  line-height: 0.7rem;
+  cursor: pointer; 
+}
+
+#links a:hover {
+  color: var(--links-hover); 
+  text-decoration: underline;
 }
 
 #bar {
@@ -105,6 +120,11 @@ input {
   border: none; 
   outline: none; 
   border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: var(--dark-gray-hover); 
 }
 
 #footer {
@@ -132,7 +152,7 @@ input {
 }
 
 #showcase img {
-  width: 90%; 
+  width: 60%; 
 }
 
 #showcase #try-btn {
@@ -143,4 +163,40 @@ input {
   border: none; 
   outline: none; 
   border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (min-width: 1200px) {
+  #left {
+    flex: 5; 
+  }
+
+  #right {
+    flex: 7; 
+  }
+}
+
+@media (max-width: 768px) {
+  #right {
+    display: none;
+  }
+
+  #footer {
+    padding-top: 4rem; 
+  }
+
+  .signin-btn {
+    margin-top: 0.7rem; 
+    margin-bottom: 0.7rem; 
+  }
+
+  #links {
+    margin-top: 0.7rem; 
+  }
+
+  #links a {
+    line-height: 0.5rem;
+  }
 }
